@@ -38,6 +38,7 @@ instance Ord Cookie where
 
 class Contravariant m where
   contramap :: (b->a) -> (m a -> m b)
+-- or install and import Data.Functor.Contravariant
 
 -- There is one complication, though  ... contramap takes only one functor (m a) as input only so need a helper like 'on' to be able to take two of them (to compare 2 money instances)
 
